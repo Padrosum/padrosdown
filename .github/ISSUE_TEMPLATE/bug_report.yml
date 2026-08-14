@@ -1,0 +1,67 @@
+name: Hata bildirimi
+description: Tekrarlanabilir bir Padrosdown hatasını bildirin.
+title: "[Hata]: "
+labels: [bug]
+body:
+  - type: markdown
+    attributes:
+      value: Bildirimden önce kişisel not içeriklerini ve mutlak dosya yollarını kayıtlardan temizleyin.
+
+  - type: input
+    id: version
+    attributes:
+      label: Padrosdown sürümü
+      placeholder: 0.1.0 veya git commit kimliği
+    validations:
+      required: true
+
+  - type: input
+    id: environment
+    attributes:
+      label: Sistem
+      description: Dağıtım, masaüstü ortamı ve görüntü sunucusu.
+      placeholder: Fedora 42, KDE Plasma 6, Wayland
+    validations:
+      required: true
+
+  - type: textarea
+    id: steps
+    attributes:
+      label: Tekrarlama adımları
+      placeholder: |
+        1. Uygulamayı aç
+        2. ...
+        3. ...
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected
+    attributes:
+      label: Beklenen davranış
+    validations:
+      required: true
+
+  - type: textarea
+    id: actual
+    attributes:
+      label: Gerçekleşen davranış
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: İlgili kayıtlar
+      description: Yalnızca gerekli bölümü ekleyin; API anahtarı, not içeriği ve mutlak yolları silin.
+      render: shell
+
+  - type: checkboxes
+    id: checks
+    attributes:
+      label: Kontrol listesi
+      options:
+        - label: Aynı hatanın daha önce bildirilmediğini kontrol ettim.
+          required: true
+        - label: Paylaştığım verilerde sır veya kişisel not içeriği bulunmadığını kontrol ettim.
+          required: true

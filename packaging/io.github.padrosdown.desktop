@@ -1,0 +1,10 @@
+[Desktop Entry]
+Type=Application
+Name=padrosdown
+Comment=Markdown çalışma alanı
+Exec=padrosdown
+Icon=padrosdown
+Terminal=false
+Categories=Office;TextEditor;Utility;
+MimeType=text/markdown;
+StartupNotify=true

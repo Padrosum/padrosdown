@@ -1,0 +1,36 @@
+name: Özellik önerisi
+description: Padrosdown için odaklı bir geliştirme önerin.
+title: "[Öneri]: "
+labels: [enhancement]
+body:
+  - type: textarea
+    id: problem
+    attributes:
+      label: Çözülmesini istediğiniz sorun
+      description: Özellikten önce kullanım sorununu ve bağlamını anlatın.
+    validations:
+      required: true
+
+  - type: textarea
+    id: solution
+    attributes:
+      label: Önerilen çözüm
+    validations:
+      required: true
+
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Değerlendirdiğiniz alternatifler
+
+  - type: dropdown
+    id: platform
+    attributes:
+      label: İlgili platform
+      options:
+        - Linux
+        - Windows
+        - macOS
+        - Tüm platformlar
+    validations:
+      required: true
