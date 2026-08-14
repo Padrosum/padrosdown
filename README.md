@@ -122,7 +122,3 @@ git push -u origin main
 ```
 
 HTTPS kullanıyorsanız `origin` adresini GitHub'ın verdiği HTTPS adresiyle değiştirin. Depo adı veya hesabınız farklıysa örnek adresi buna göre düzenleyin.
-
-## Lisans
-
-Henüz bir açık kaynak lisansı seçilmemiştir. Bir `LICENSE` dosyası eklenene kadar telif hakları saklıdır ve kaynak kodun GitHub'da görünür olması yeniden kullanım izni vermez. Açık kaynak olarak yayınlamadan önce MIT, Apache-2.0, GPL-3.0 veya ihtiyaçlarınıza uygun başka bir lisansı bilinçli olarak seçin.
